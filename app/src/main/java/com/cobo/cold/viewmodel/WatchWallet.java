@@ -88,6 +88,7 @@ public enum WatchWallet {
     public boolean supportBc32QrCode() {
         switch (this) {
             case GENERIC:
+            case BTCPAY:
             case BLUE:
                 return true;
             default:return false;
@@ -99,6 +100,7 @@ public enum WatchWallet {
             case ELECTRUM:
             case COBO:
             case GENERIC:
+            case BTCPAY:
             case BLUE:
                 return true;
             default:return false;
